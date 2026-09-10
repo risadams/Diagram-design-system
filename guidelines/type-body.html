@@ -1,0 +1,18 @@
+<!-- @dsCard group="Type" viewport="700x200" subtitle="19px serif, line-height 1.68, measure capped at 68ch" name="Body — Fraunces" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Body type</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:100%}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font-serif);
+       padding:20px 24px;display:flex;align-items:center}
+  .row{display:flex;gap:16px;flex-wrap:wrap;width:100%}
+  .sw{display:flex;flex-direction:column;gap:6px;min-width:96px}
+  .chip{height:52px;border-radius:6px;border:1px solid rgba(26,22,20,.12)}
+  .name{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ink-mute);text-transform:uppercase}
+  .hex{font-family:var(--font-mono);font-size:10px;color:var(--ink-faint)}
+  .note{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase}
+  body{display:block}p{font-size:19px;line-height:1.68;max-width:68ch;font-variation-settings:"SOFT" 40}a{color:var(--ink-rose);text-decoration-color:color-mix(in srgb,currentColor 40%,transparent);text-decoration-thickness:1.5px;text-underline-offset:3px}a:hover{text-decoration-color:currentColor;text-decoration-thickness:2px;color:var(--ink-rose-deep)}
+</style></head><body><p>Every diagram draws from one style guide, not from hex values inlined elsewhere. Change the skin in one file and every new figure inherits it — <a href="#">nothing type-specific moves</a>.</p></body></html>

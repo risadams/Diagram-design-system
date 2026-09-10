@@ -1,0 +1,17 @@
+/* Spacing — 4px grid (hard rule for diagram coordinates) */
+:root {
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 80px;
+
+  --dd-outer-margin: 40px;   /* every size preset */
+  --dd-legend-strip: 60px;   /* bottom band, nothing else lives there */
+  --dd-node-min-h: 48px;
+  --dd-node-gap: 24px;
+}

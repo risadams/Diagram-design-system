@@ -1,0 +1,77 @@
+/* Diagram Design semantic roles → Ris Ink skin.
+   These are the roles diagram-design's style-guide.md names. Mirror of profiles/ris-ink.md. */
+:root {
+  --dd-paper: #faf6ef;
+  --dd-paper-2: #f4ecdd;
+  --dd-ink: #1a1614;
+  --dd-muted: #6b625a;
+  --dd-soft: #776e65;
+  --dd-rule: rgba(26, 22, 20, 0.12);
+  --dd-rule-solid: #d8c9ad;
+  --dd-accent: #CB0162;
+  --dd-accent-tint: rgba(203, 1, 98, 0.08);
+  --dd-link: #1a5b6e;
+
+  /* series palette (multi-series charts only) */
+  --dd-series-1: #1a5b6e;
+  --dd-series-2: #6b3a6e;
+  --dd-series-3: #8a5a3c;
+  --dd-series-4: #8a5c00;
+  --dd-series-5: #4d7c43;
+
+  /* terminal skin (opt-in alternate — parchment CLI) */
+  --dd-terminal-page: #14100e;
+  --dd-terminal-paper: #1a1210;
+  --dd-terminal-bar: #241c19;
+  --dd-terminal-border: #3a2d26;
+  --dd-terminal-ink: #f0e6d2;
+  --dd-terminal-muted: #a89e8f;
+  --dd-terminal-soft: #6e665b;
+  --dd-terminal-accent: #e24a8a;
+  --dd-terminal-accent-tint: rgba(226, 74, 138, 0.12);
+
+  /* node treatments */
+  --dd-node-focal-fill: rgba(203, 1, 98, 0.08);
+  --dd-node-backend-fill: #fffdf8;
+  --dd-node-store-fill: rgba(26, 22, 20, 0.05);
+  --dd-node-external-fill: rgba(26, 22, 20, 0.03);
+  --dd-node-input-fill: rgba(107, 98, 90, 0.10);
+  --dd-node-optional-fill: rgba(26, 22, 20, 0.02);
+  --dd-node-security-fill: rgba(203, 1, 98, 0.05);
+
+  /* stroke / radius / grid */
+  --dd-stroke-thin: 0.8;
+  --dd-stroke-default: 1;
+  --dd-stroke-strong: 1.2;
+  --dd-radius-sm: 4px;
+  --dd-radius-md: 6px;
+  --dd-radius-lg: 8px;
+  --dd-grid: 4px;
+}
+
+[data-theme='dark'] {
+  --dd-paper: #1a1614;
+  --dd-paper-2: #241c19;
+  --dd-ink: #f4ecdd;
+  --dd-muted: #a89e8f;
+  --dd-soft: #948b7d;
+  --dd-rule: rgba(244, 236, 221, 0.12);
+  --dd-rule-solid: rgba(216, 201, 173, 0.25);
+  --dd-accent: #e24a8a;
+  --dd-accent-tint: rgba(226, 74, 138, 0.10);
+  --dd-link: #5ba3b8;
+
+  --dd-series-1: #5ba3b8;
+  --dd-series-2: #b183b5;
+  --dd-series-3: #b8875f;
+  --dd-series-4: #d9a13f;
+  --dd-series-5: #7fae6a;
+
+  --dd-node-focal-fill: rgba(226, 74, 138, 0.10);
+  --dd-node-backend-fill: #241c19;
+  --dd-node-store-fill: rgba(244, 236, 221, 0.05);
+  --dd-node-external-fill: rgba(244, 236, 221, 0.03);
+  --dd-node-input-fill: rgba(168, 158, 143, 0.10);
+  --dd-node-optional-fill: rgba(244, 236, 221, 0.02);
+  --dd-node-security-fill: rgba(226, 74, 138, 0.05);
+}

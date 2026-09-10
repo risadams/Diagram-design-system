@@ -1,0 +1,21 @@
+<!-- @dsCard group="Spacing" viewport="700x150" subtitle="Every coordinate, size and gap divisible by 4 — hard rule" name="4px grid" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Grid</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:100%}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font-serif);
+       padding:20px 24px;display:flex;align-items:center}
+  .row{display:flex;gap:16px;flex-wrap:wrap;width:100%}
+  .sw{display:flex;flex-direction:column;gap:6px;min-width:96px}
+  .chip{height:52px;border-radius:6px;border:1px solid rgba(26,22,20,.12)}
+  .name{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ink-mute);text-transform:uppercase}
+  .hex{font-family:var(--font-mono);font-size:10px;color:var(--ink-faint)}
+  .note{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase}
+  body{display:block}
+ .bars{display:flex;align-items:flex-end;gap:12px;margin-bottom:10px}
+ .bar{background:rgba(203,1,98,.14);border:1px solid var(--ink-rose);border-radius:2px;width:34px}
+ .bar span{display:block;font-family:var(--font-mono);font-size:9px;color:var(--ink-mute);text-align:center;margin-top:4px}
+</style></head><body><div class="bars"><div><div class="bar" style="height:4px"></div><span>4</span></div><div><div class="bar" style="height:8px"></div><span>8</span></div><div><div class="bar" style="height:12px"></div><span>12</span></div><div><div class="bar" style="height:16px"></div><span>16</span></div><div><div class="bar" style="height:24px"></div><span>24</span></div><div><div class="bar" style="height:32px"></div><span>32</span></div><div><div class="bar" style="height:48px"></div><span>48</span></div><div><div class="bar" style="height:64px"></div><span>64</span></div><div><div class="bar" style="height:80px"></div><span>80</span></div></div></body></html>

@@ -1,0 +1,23 @@
+<!-- @dsCard group="Brand" viewport="700x150" subtitle="One curve, small physical nudges, everything off under reduced motion" name="Motion" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Motion</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:100%}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font-serif);
+       padding:20px 24px;display:flex;align-items:center}
+  .row{display:flex;gap:16px;flex-wrap:wrap;width:100%}
+  .sw{display:flex;flex-direction:column;gap:6px;min-width:96px}
+  .chip{height:52px;border-radius:6px;border:1px solid rgba(26,22,20,.12)}
+  .name{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ink-mute);text-transform:uppercase}
+  .hex{font-family:var(--font-mono);font-size:10px;color:var(--ink-faint)}
+  .note{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase}
+  body{display:block}
+ .r{display:flex;justify-content:space-between;padding:8px 0;border-bottom:var(--rule-dashed);font-size:16px}
+ .r span{font-family:var(--font-mono);font-size:11px;color:var(--ink-faint);letter-spacing:.06em}
+</style></head><body><div class="r">Easing<span>CUBIC-BEZIER(.2,.6,.2,1)</span></div>
+<div class="r">Card hover<span>TRANSLATEY(-4PX) · 0.25S</span></div>
+<div class="r">Row hover<span>TRANSLATEX(6PX) · TITLE → ROSE</span></div>
+<div class="r">Ink-bleed entrance<span>BLUR(18PX→0) · 1.4S · 150MS STAGGER</span></div></body></html>

@@ -1,0 +1,18 @@
+/* Motion — one easing curve, physical nudges, reduced-motion required */
+:root {
+  --ease-ink: cubic-bezier(.2, .6, .2, 1);
+  --dur-hover: 0.25s;
+  --dur-lift: 0.4s;
+  --dur-enter: 1.4s;
+  --stagger: 150ms;
+  --nudge-card: -4px;
+  --nudge-row: 6px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}

@@ -1,0 +1,22 @@
+<!-- @dsCard group="Brand" viewport="700x170" subtitle="Fractal noise at 0.06 multiply — page level, never inside the exported SVG" name="Paper grain" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Paper grain</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:100%}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font-serif);
+       padding:20px 24px;display:flex;align-items:center}
+  .row{display:flex;gap:16px;flex-wrap:wrap;width:100%}
+  .sw{display:flex;flex-direction:column;gap:6px;min-width:96px}
+  .chip{height:52px;border-radius:6px;border:1px solid rgba(26,22,20,.12)}
+  .name{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ink-mute);text-transform:uppercase}
+  .hex{font-family:var(--font-mono);font-size:10px;color:var(--ink-faint)}
+  .note{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase}
+  body{display:block;position:relative}
+ .plate{position:relative;height:110px;border-radius:6px;background:var(--paper-warm);border:1px solid var(--paper-edge);overflow:hidden;display:flex;align-items:center;padding:0 18px}
+ .plate::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.14;mix-blend-mode:multiply;
+   background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)'/%3E%3C/svg%3E")}
+ .plate span{font-family:var(--font-mono);font-size:11px;letter-spacing:.14em;color:var(--ink-mute);text-transform:uppercase;position:relative;z-index:1}
+</style></head><body><div class="plate"><span>grain 0.06 light · 0.09 dark · screen when inverted</span></div></body></html>

@@ -1,0 +1,39 @@
+<!-- @dsCard group="Brand" viewport="700x180" subtitle="One rose node per figure. Everything else is ink, muted or soft." name="The one-accent rule" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>One accent</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:100%}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font-serif);
+       padding:20px 24px;display:flex;align-items:center}
+  .row{display:flex;gap:16px;flex-wrap:wrap;width:100%}
+  .sw{display:flex;flex-direction:column;gap:6px;min-width:96px}
+  .chip{height:52px;border-radius:6px;border:1px solid rgba(26,22,20,.12)}
+  .name{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ink-mute);text-transform:uppercase}
+  .hex{font-family:var(--font-mono);font-size:10px;color:var(--ink-faint)}
+  .note{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase}
+  body{display:block}
+</style></head><body><svg viewBox="0 0 920 150" style="width:100%;display:block">
+<rect x="16" y="40" width="150" height="64" rx="6" fill="rgba(26,22,20,.03)" stroke="rgba(26,22,20,.30)"/>
+<text x="91" y="70" font-family="'Fraunces',serif" font-size="14" font-weight="600" fill="#1a1614" text-anchor="middle">Reader</text>
+<text x="91" y="88" font-family="'JetBrains Mono',monospace" font-size="10" fill="#6b625a" text-anchor="middle">browser</text>
+<line x1="170" y1="72" x2="218" y2="72" stroke="#1a5b6e" stroke-width="1.2" marker-end="url(#a1)"/>
+<rect x="222" y="40" width="150" height="64" rx="6" fill="#fffdf8" stroke="#1a1614"/>
+<text x="297" y="70" font-family="'Fraunces',serif" font-size="14" font-weight="600" fill="#1a1614" text-anchor="middle">Edge cache</text>
+<text x="297" y="88" font-family="'JetBrains Mono',monospace" font-size="10" fill="#6b625a" text-anchor="middle">backend</text>
+<line x1="376" y1="72" x2="424" y2="72" stroke="#CB0162" stroke-width="1.4" marker-end="url(#a2)"/>
+<rect x="428" y="40" width="150" height="64" rx="6" fill="rgba(203,1,98,.08)" stroke="#CB0162"/>
+<text x="503" y="70" font-family="'Fraunces',serif" font-size="14" font-weight="600" fill="#1a1614" text-anchor="middle">Origin</text>
+<text x="503" y="88" font-family="'JetBrains Mono',monospace" font-size="10" fill="#CB0162" text-anchor="middle">focal</text>
+<line x1="582" y1="72" x2="630" y2="72" stroke="#6b625a" stroke-width="1" stroke-dasharray="4,3" marker-end="url(#a3)"/>
+<rect x="634" y="40" width="150" height="64" rx="6" fill="rgba(26,22,20,.02)" stroke="rgba(26,22,20,.20)" stroke-dasharray="4,3"/>
+<text x="709" y="70" font-family="'Fraunces',serif" font-size="14" font-weight="600" fill="#1a1614" text-anchor="middle">Archive</text>
+<text x="709" y="88" font-family="'JetBrains Mono',monospace" font-size="10" fill="#776e65" text-anchor="middle">optional</text>
+<defs>
+<marker id="a1" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#1a5b6e"/></marker>
+<marker id="a2" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#CB0162"/></marker>
+<marker id="a3" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto"><polygon points="0 0, 8 3, 0 6" fill="#6b625a"/></marker>
+</defs>
+</svg></body></html>

@@ -1,0 +1,20 @@
+<!-- @dsCard group="Components" viewport="700x400" name="Diagram primitives" subtitle="Node treatments, connectors, zone, legend, annotation" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Diagram primitives</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../ds-fallback.js"></script>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font-serif)}
+  svg{width:100%;display:block}
+</style></head>
+<body><div id="root"></div>
+<script>
+  Promise.all([loadRisDS('../../'), loadRisScripts(['diagram.demo.jsx'])])
+    .then(function (r) { window.mountDiagramDemo(r[0]); });
+</script>
+</body></html>

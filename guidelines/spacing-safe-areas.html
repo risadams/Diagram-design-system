@@ -1,0 +1,24 @@
+<!-- @dsCard group="Spacing" viewport="700x210" subtitle="40px outer margin; the bottom 60px is the legend strip and nothing else" name="Diagram safe areas" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Safe areas</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:100%}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font-serif);
+       padding:20px 24px;display:flex;align-items:center}
+  .row{display:flex;gap:16px;flex-wrap:wrap;width:100%}
+  .sw{display:flex;flex-direction:column;gap:6px;min-width:96px}
+  .chip{height:52px;border-radius:6px;border:1px solid rgba(26,22,20,.12)}
+  .name{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ink-mute);text-transform:uppercase}
+  .hex{font-family:var(--font-mono);font-size:10px;color:var(--ink-faint)}
+  .note{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase}
+  body{display:block}
+</style></head><body><svg viewBox="0 0 960 260" style="width:100%;display:block">
+<rect x="0.5" y="0.5" width="959" height="259" fill="#f4ecdd" stroke="#d8c9ad"/>
+<rect x="40" y="40" width="880" height="140" fill="rgba(203,1,98,.06)" stroke="#CB0162" stroke-dasharray="4,3"/>
+<rect x="40" y="196" width="880" height="60" fill="rgba(26,22,20,.03)" stroke="rgba(26,22,20,.2)" stroke-dasharray="4,3"/>
+<text x="52" y="60" font-family="'JetBrains Mono',monospace" font-size="11" letter-spacing="0.14em" fill="#6b625a">CONTENT · 40PX MARGIN</text>
+<text x="52" y="228" font-family="'JetBrains Mono',monospace" font-size="11" letter-spacing="0.14em" fill="#776e65">LEGEND STRIP · 60PX</text>
+</svg></body></html>

@@ -1,0 +1,45 @@
+<!-- @dsCard group="Diagram gallery" viewport="1280x820" name="Gallery" subtitle="Four figures in the Ris Ink skin, light and parchment" -->
+<!-- @startingPoint section="Diagrams" subtitle="Diagram gallery shell with theme + figure switcher" viewport="1280x820" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ris Ink · Diagram gallery</title>
+<link rel="stylesheet" href="../../styles.css">
+<script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+<script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+<script src="../../ds-fallback.js"></script>
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font-serif);min-height:100vh}
+  a{color:var(--ink-rose);text-decoration-color:color-mix(in srgb,currentColor 40%,transparent);
+    text-decoration-thickness:1.5px;text-underline-offset:3px}
+  a:hover{color:var(--ink-rose-deep);text-decoration-color:currentColor}
+  :focus-visible{outline:2px solid var(--ink-rose);outline-offset:3px}
+  .bar{position:sticky;top:0;z-index:5;display:flex;gap:18px;align-items:center;flex-wrap:wrap;
+       padding:14px 32px;border-bottom:1px solid var(--paper-edge);
+       background:linear-gradient(var(--paper),color-mix(in srgb,var(--paper) 88%,transparent));
+       backdrop-filter:blur(8px)}
+  .bar .sp{flex:1}
+  .toggle{font-family:var(--font-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+          color:var(--ink-mute);background:none;border:1px solid var(--paper-edge);border-radius:2px;
+          padding:13px 16px;min-height:44px;white-space:nowrap;cursor:pointer;
+          transition:color .25s var(--ease-ink)}
+  .toggle:hover{color:var(--ink-rose)}
+  [data-theme='dark'] body,body[data-theme='dark']{background:var(--paper);color:var(--ink)}
+</style></head>
+<body>
+<div id="root"></div>
+<script>
+  Promise.all([
+    loadRisDS('../../'),
+    loadRisScripts([
+      'ArchitectureFigure.jsx', 'LayerStackFigure.jsx',
+      'FlowchartFigure.jsx', 'TerminalFigure.jsx', 'app.jsx',
+    ]),
+  ]).then(function (r) {
+    window.RIS_DS = r[0];
+    window.mountGallery(r[0]);
+  });
+</script>
+</body></html>

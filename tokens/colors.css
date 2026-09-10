@@ -1,0 +1,62 @@
+/* Brand palette — risadams.com ink-on-paper (source: risadams/vs-ris BRAND.md) */
+:root {
+  /* ink accents */
+  --ink-rose: #CB0162;
+  --ink-rose-soft: #e24a8a;
+  --ink-rose-deep: #8f0044;
+  --ink-teal: #1a5b6e;
+  --ink-teal-soft: #5ba3b8;
+  --ink-plum: #6b3a6e;
+  --ink-plum-soft: #b183b5;
+  --ink-sepia: #8a5a3c;
+  --ink-sepia-soft: #b8875f;
+  --ink-ochre: #c48a1e;        /* decorative only — fails text contrast on paper */
+  --ink-ochre-text: #8a5c00;   /* AA-safe ochre for type */
+  --ink-green: #4d7c43;
+
+  /* paper surfaces (light — "Ink Paper") */
+  --paper: #faf6ef;
+  --paper-warm: #f4ecdd;
+  --paper-deep: #ede3cf;
+  --paper-edge: #d8c9ad;
+  --paper-lift: #fffdf8;       /* warm white — never #ffffff */
+
+  /* ink text (AA-safe on paper) */
+  --ink: #1a1614;              /* 16.7:1 */
+  --ink-soft: #3a322c;         /* 11.7:1 */
+  --ink-mute: #6b625a;         /* 5.5:1  */
+  --ink-faint: #776e65;        /* 4.6:1 — do not go lighter */
+
+  /* hairlines */
+  --rule-dashed: 1px dashed rgba(26, 22, 20, 0.10);
+  --rule-solid: 1px solid var(--paper-edge);
+
+  /* code block palette (parchment-dark, used in light mode too) */
+  --code-bg: #2a2220;
+  --code-fg: #f0e6d2;
+  --code-comment: #a49a8e;
+  --code-keyword: #e8659a;
+  --code-function: #b183b5;
+  --code-string: #5ba3b8;
+  --code-number: #c48a1e;
+  --code-type: #b8875f;
+  --code-punct: #c8b89a;
+}
+
+[data-theme='dark'] {
+  --paper: #1a1614;
+  --paper-warm: #241c19;
+  --paper-deep: #2a211c;
+  --paper-edge: #3a2d26;
+  --paper-lift: #241c19;
+
+  --ink: #f4ecdd;
+  --ink-soft: #ddd1bb;
+  --ink-mute: #a89e8f;
+  --ink-faint: #948b7d;
+
+  --rule-dashed: 1px dashed rgba(244, 236, 221, 0.12);
+  --rule-solid: 1px solid var(--paper-edge);
+
+  --code-bg: #1a1210;
+}

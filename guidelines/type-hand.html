@@ -1,0 +1,21 @@
+<!-- @dsCard group="Type" viewport="700x170" subtitle="Caveat, one per view, rotated -1.5° to -3° — never a label a reader must parse" name="Hand — Caveat" -->
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<title>Hand type</title>
+<link rel="stylesheet" href="../styles.css">
+<style>
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+  html{font-size:100%}
+  body{background:var(--paper);color:var(--ink);font-family:var(--font-serif);
+       padding:20px 24px;display:flex;align-items:center}
+  .row{display:flex;gap:16px;flex-wrap:wrap;width:100%}
+  .sw{display:flex;flex-direction:column;gap:6px;min-width:96px}
+  .chip{height:52px;border-radius:6px;border:1px solid rgba(26,22,20,.12)}
+  .name{font-family:var(--font-mono);font-size:10px;letter-spacing:.06em;color:var(--ink-mute);text-transform:uppercase}
+  .hex{font-family:var(--font-mono);font-size:10px;color:var(--ink-faint)}
+  .note{font-family:var(--font-mono);font-size:10px;letter-spacing:.08em;color:var(--ink-faint);text-transform:uppercase}
+  body{display:block}
+ .hand{font-family:var(--font-hand);font-size:34px;font-weight:600;color:var(--ink-teal);transform:rotate(-2deg);display:inline-block}
+ .hand.rose{color:var(--ink-rose);font-size:26px}
+</style></head><body><div class="hand">this is the part that breaks</div><br><div class="hand rose">still a guess →</div>
+<div class="note" style="margin-top:12px">margin-note slot · 18px in-SVG, 26–40px on the page</div></body></html>

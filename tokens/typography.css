@@ -1,0 +1,31 @@
+/* Type — Fraunces / Caveat / JetBrains Mono */
+:root {
+  --font-serif: "Fraunces", "Crimson Pro", Georgia, serif;
+  --font-hand: "Caveat", "Segoe Script", cursive;
+  --font-mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+  --font-sans: "Fraunces", "Crimson Pro", Georgia, serif; /* the brand has no sans register */
+
+  /* variable-font character on display type */
+  --fraunces-display: "SOFT" 60, "WONK" 1;
+  --fraunces-text: "SOFT" 40, "WONK" 0;
+
+  /* diagram type ramp (standard size class) */
+  --dd-title-size: 28px;
+  --dd-node-name-size: 12px;
+  --dd-sublabel-size: 9px;
+  --dd-eyebrow-size: 8px;
+  --dd-arrow-label-size: 8px;
+  --dd-callout-size: 14px;      /* italic Fraunces */
+  --dd-margin-note-size: 18px;  /* Caveat */
+
+  /* page type */
+  --text-body: 1.0555rem;       /* ~19px at 112.5% root */
+  --line-body: 1.68;
+  --track-display: -0.02em;
+  --track-mono: 0.08em;
+  --track-eyebrow: 0.18em;
+  --max-read: 68ch;
+  --max-wide: 1180px;
+}
+
+html { font-size: 112.5%; }
